@@ -2,16 +2,16 @@
 import { useState } from "react";
 
 export default function UserInput() {
-  const [userValue, setUserValue] = useState({
+  const [userValue, setUserValue] = useState({//merging 4 input values into one object
     initialInvestment: 10000,
     annualInvestment: 1200,
     expectedReturn: 6,
     duration: 10,
   });
 
-  function handleChange(userIdentifier, newValue) {
+  function handleChange(userIdentifier, newValue) {//userIdentifier=> is one of initialInvestment or annualInvestment or expectedReturn or duration
     setUserValue((prevUserValue) => {
-      console.log(prevUserValue);
+     
       return {
         ...prevUserValue,
         [userIdentifier]: newValue,
