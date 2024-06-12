@@ -73,8 +73,6 @@ body {
   border-spacing: 1rem;
   text-align: right;
 
-  display: flex;
-  justify-content: center;
 }
 
 #result thead {
